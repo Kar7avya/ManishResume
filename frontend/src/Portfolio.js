@@ -1310,7 +1310,7 @@ const Portfolio = () => {
                   <div className="col-sm-4">
                     <div className="text-center p-4 rounded" style={{...customStyles.glassCard, background: 'linear-gradient(135deg, rgba(124, 58, 237, 0.2), rgba(236, 72, 153, 0.2))'}}>
                       <Users size={32} className="mb-2" style={{color: '#a855f7'}} />
-                      <div className="h2 fw-bold text-white">4</div>
+                      <div className="h2 fw-bold text-white">7</div>
                       <small className="text-white">Industries</small>
                     </div>
                   </div>
@@ -1443,13 +1443,69 @@ const Portfolio = () => {
     </div>
 </div>
              
+<div className="position-relative ps-5 ms-4">
+    <div className="position-absolute start-0 top-0 rounded-circle border border-4 ms-n2" 
+        style={{width: '16px', height: '16px', background: 'linear-gradient(to right, #34d399, #3b82f6)', borderColor: '#1e293b !important'}}></div>
+    <div className="p-4 rounded-4" style={{...customStyles.glassCard, transition: 'all 0.3s ease'}}
+        onMouseEnter={(e) => e.target.style.borderColor = 'rgba(255, 255, 255, 0.3)'}
+        onMouseLeave={(e) => e.target.style.borderColor = 'rgba(255, 255, 255, 0.1)'}>
+        <h3 className="h2 fw-bold text-white mb-2">Lead Manager Electrical</h3>
+        <p className="fw-semibold mb-3" style={{color: '#34d399'}}>Reliance Industries Limited • September 2007 - May 2011</p>
+            <p className="fw-semibold mb-3" style={{color: '#34d399'}}>3 years, 9 months</p>
+            
+        <p className="text-light mb-3">
+            Specialized in electrical commissioning and Operations & Maintenance (O&M) for large-scale industrial projects.
+        </p>
+        <div className="d-flex flex-wrap gap-2">
+            <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(234, 88, 12, 0.2)', color: '#fed7aa'}}>Electrical Commissioning</span>
+            <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(234, 179, 8, 0.2)', color: '#fef08a'}}>O&M</span>
+            <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(8, 145, 178, 0.2)', color: '#a5f3fc'}}>Jamnagar Operations</span>
+        </div>
+    </div>
+</div>
 
 
 
+            <div className="position-relative ps-5 ms-4">
+    <div className="position-absolute start-0 top-0 rounded-circle border border-4 ms-n2" 
+        style={{width: '16px', height: '16px', background: 'linear-gradient(to right, #34d399, #3b82f6)', borderColor: '#1e293b !important'}}></div>
+    <div className="p-4 rounded-4" style={{...customStyles.glassCard, transition: 'all 0.3s ease'}}
+        onMouseEnter={(e) => e.target.style.borderColor = 'rgba(255, 255, 255, 0.3)'}
+        onMouseLeave={(e) => e.target.style.borderColor = 'rgba(255, 255, 255, 0.1)'}>
+        <h3 className="h2 fw-bold text-white mb-2">Electrical Manager</h3>
+        <p className="fw-semibold mb-3" style={{color: '#34d399'}}>KRIBHCO SHYAM FERTILIZER LTD • 1997 - 2007</p>
+            <p className="fw-semibold mb-3" style={{color: '#34d399'}}>10 years</p>
+        <p className="text-light mb-3">
+            Ten years of experience managing electrical systems and leading teams in the fertilizer industry.
+        </p>
+        <div className="d-flex flex-wrap gap-2">
+            <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(234, 88, 12, 0.2)', color: '#fed7aa'}}>Electrical Management</span>
+            <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(234, 179, 8, 0.2)', color: '#fef08a'}}>Fertilizer Industry</span>
+            <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(8, 145, 178, 0.2)', color: '#a5f3fc'}}>Team Leadership</span>
+        </div>
+    </div>
+</div>
 
 
-
-
+<div className="position-relative ps-5 ms-4">
+    <div className="position-absolute start-0 top-0 rounded-circle border border-4 ms-n2" 
+        style={{width: '16px', height: '16px', background: 'linear-gradient(to right, #34d399, #3b82f6)', borderColor: '#1e293b !important'}}></div>
+    <div className="p-4 rounded-4" style={{...customStyles.glassCard, transition: 'all 0.3s ease'}}
+        onMouseEnter={(e) => e.target.style.borderColor = 'rgba(255, 255, 255, 0.3)'}
+        onMouseLeave={(e) => e.target.style.borderColor = 'rgba(255, 255, 255, 0.1)'}>
+        <h3 className="h2 fw-bold text-white mb-2">Service Engineer</h3>
+        <p className="fw-semibold mb-3" style={{color: '#34d399'}}>Jyoti Ltd. • November 1994 - June 1997</p>
+            <p className="fw-semibold mb-3" style={{color: '#34d399'}}>2 years, 8 months</p>
+        <p className="text-light mb-3">
+            Responsible for managing high-voltage switchgear installations and service for Northern India.
+        </p>
+        <div className="d-flex flex-wrap gap-2">
+            <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(234, 88, 12, 0.2)', color: '#fed7aa'}}>High-Voltage Switchgear</span>
+            <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(234, 179, 8, 0.2)', color: '#fef08a'}}>Field Service</span>
+            <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(8, 145, 178, 0.2)', color: '#a5f3fc'}}>Installation Management</span>
+        </div>
+    </div>
+</div>
 
 
 
