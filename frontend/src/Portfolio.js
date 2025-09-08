@@ -1076,7 +1076,7 @@
 
 // export default Portfolio;
 import React, { useState, useEffect } from 'react';
-import { ChevronDown, Mail, Phone, MapPin, Calendar, Award, Users, Zap, Factory, Wrench, BarChart3, Globe, Linkedin, Github } from 'lucide-react';
+import { ChevronDown, Mail, Phone, MapPin, Calendar, Award, Users, Zap, Factory, Wrench, BarChart3, Globe, Linkedin, BookOpen, GraduationCap } from 'lucide-react';
 import manish from './manish.jpg'; // Ensure you have a manish.jpg image in the src folder
 
 const Portfolio = () => {
@@ -1335,6 +1335,50 @@ const Portfolio = () => {
                       <span className="text-light">{skill}</span>
                     </div>
                   ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+{/* Education Section */}
+      <section id="education" className="py-5" style={{ background: 'rgba(0, 0, 0, 0.2)' }}>
+        <div className="container">
+          <div className="text-center mb-5">
+            <h2 className="display-3 fw-bold mb-4" style={customStyles.gradientText}>
+              Education
+            </h2>
+            <div className="mx-auto rounded-pill" style={{ width: '96px', height: '4px', background: 'linear-gradient(to right, #3b82f6, #7c3aed)' }}></div>
+          </div>
+          <div className="row justify-content-center g-4">
+            <div className="col-lg-8">
+              <div className="p-4 rounded-4" style={customStyles.glassCard}>
+                <div className="d-flex align-items-center mb-3">
+                  <GraduationCap size={48} className="me-3" style={{ color: '#60a5fa' }} />
+                  <div>
+                    <h3 className="h4 fw-bold text-white mb-0">U.P. Technical University</h3>
+                    <p className="text-light mb-0">Institute of Engineering & Technology, Lucknow</p>
+                  </div>
+                </div>
+                <div className="d-flex justify-content-between align-items-center mb-2">
+                  <p className="fw-semibold mb-0" style={{ color: '#93c5fd' }}>Bachelor of Technology (B.Tech.) in Electrical Engineering</p>
+                  <small className="text-white">1990 - 1994</small>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-8">
+              <div className="p-4 rounded-4" style={customStyles.glassCard}>
+                <div className="d-flex align-items-center mb-3">
+                  <BookOpen size={48} className="me-3" style={{ color: '#60a5fa' }} />
+                  <div>
+                    <h3 className="h4 fw-bold text-white mb-0">City Montessori School</h3>
+                    <p className="text-light mb-0">Lucknow</p>
+                  </div>
+                </div>
+                <div className="d-flex justify-content-between align-items-center mb-2">
+                  <p className="fw-semibold mb-0" style={{ color: '#93c5fd' }}>High School</p>
+                  <small className="text-white">Pre-1990</small>
                 </div>
               </div>
             </div>
