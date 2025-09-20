@@ -1328,9 +1328,7 @@ const Portfolio = () => {
                       'Plant Maintenance',
                       'Safety & Compliance',
                       'Team Development',
-                      'Strategic Planning',
-                      'Project Commissioning of 2x800 MW Thermal Power Plant',
-                      '6 MTPA Polypropylene Plant Electrical Systems'
+                      'Strategic Planning'
                   ].map((skill, index) => (
                     <div key={skill} className="d-flex align-items-center">
                       <div className="rounded-circle me-3" style={{width: '8px', height: '8px', background: 'linear-gradient(to right, #60a5fa, #67e8f9)'}}></div>
