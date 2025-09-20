@@ -1,3 +1,4 @@
+// export default Portfolio;
 import React, { useState, useEffect } from 'react';
 import { ChevronDown, Mail, Phone, MapPin, Calendar, Award, Users, Zap, Factory, Wrench, BarChart3, Globe, Linkedin, BookOpen, GraduationCap } from 'lucide-react';
 import manish from './manish.jpg'; // Ensure you have a manish.jpg image in the src folder
@@ -9,7 +10,7 @@ const Portfolio = () => {
   const [result, setResult] = useState('');
 
   // Web3Forms Access Key
-  const accessKey = "b0a9b682-f14d-46fd-a7b1-6ced4931403e";
+  const accessKey = "b0a9b682-f14d-46fd-a7b1-6ced4931403e"; 
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
@@ -132,7 +133,7 @@ const Portfolio = () => {
             <div className="col-lg-10">
               <div className="mb-3">
                 <div className="mx-auto mb-4 d-flex align-items-center justify-content-center" 
-                  style={{width: '192px', height: '192px', background: 'linear-gradient(135deg, #3b82f6, #7c3aed)', borderRadius: '50%', padding: '4px'}}>
+                     style={{width: '192px', height: '192px', background: 'linear-gradient(135deg, #3b82f6, #7c3aed)', borderRadius: '50%', padding: '4px'}}>
                   <img 
                     src={manish}
                     alt="Manish Kumar - Industrial Leader"
@@ -271,7 +272,7 @@ const Portfolio = () => {
         </div>
       </section>
 
-      {/* Education Section */}
+{/* Education Section */}
       <section id="education" className="py-5" style={{ background: 'rgba(0, 0, 0, 0.2)' }}>
         <div className="container">
           <div className="text-center mb-5">
@@ -315,6 +316,168 @@ const Portfolio = () => {
         </div>
       </section>
 
+      {/* Experience Section */}
+      <section id="experience" className="py-5" style={{background: 'rgba(0, 0, 0, 0.2)'}}>
+        <div className="container">
+          <div className="text-center mb-5">
+            <h2 className="display-3 fw-bold mb-4" style={customStyles.gradientText}>
+              Professional Journey
+            </h2>
+            <div className="mx-auto rounded-pill" style={{width: '96px', height: '4px', background: 'linear-gradient(to right, #3b82f6, #7c3aed)'}}></div>
+          </div>
+
+          <div className="position-relative">
+            <div className="position-absolute start-0 top-0 bottom-0 ms-4" style={{width: '2px', background: 'linear-gradient(to bottom, #3b82f6, #7c3aed)'}}></div>
+            
+            <div className="d-flex flex-column gap-5">
+              <div className="position-relative ps-5 ms-4">
+                <div className="position-absolute start-0 top-0 rounded-circle border border-4 ms-n2" 
+                     style={{width: '16px', height: '16px', background: 'linear-gradient(to right, #3b82f6, #7c3aed)', borderColor: '#1e293b !important'}}></div>
+                <div className="p-4 rounded-4" style={{...customStyles.glassCard, transition: 'all 0.3s ease'}}
+                     onMouseEnter={(e) => e.target.style.borderColor = 'rgba(255, 255, 255, 0.3)'}
+                     onMouseLeave={(e) => e.target.style.borderColor = 'rgba(255, 255, 255, 0.1)'}>
+                  <h3 className="h2 fw-bold text-white mb-2">Operations & Maintenance Leader</h3>
+                  <p className="fw-semibold mb-3" style={{color: '#60a5fa'}}>Adani Power Ltd • Present</p>
+                  <p className="text-light mb-3">
+                    Currently overseeing operations and maintenance of 2x660MW supercritical thermal power plant, 
+                    ensuring optimal performance, safety standards, and operational efficiency.
+                  </p>
+                  <div className="d-flex flex-wrap gap-2">
+                    <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(37, 99, 235, 0.2)', color: '#93c5fd'}}>Power Generation</span>
+                    <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(34, 197, 94, 0.2)', color: '#86efac'}}>Operations</span>
+                    <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(124, 58, 237, 0.2)', color: '#c4b5fd'}}>Maintenance</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="position-relative ps-5 ms-4">
+                <div className="position-absolute start-0 top-0 rounded-circle border border-4 ms-n2" 
+                    style={{width: '16px', height: '16px', background: 'linear-gradient(to right, #34d399, #3b82f6)', borderColor: '#1e293b !important'}}></div>
+                <div className="p-4 rounded-4" style={{...customStyles.glassCard, transition: 'all 0.3s ease'}}
+                    onMouseEnter={(e) => e.target.style.borderColor = 'rgba(255, 255, 255, 0.3)'}
+                    onMouseLeave={(e) => e.target.style.borderColor = 'rgba(255, 255, 255, 0.1)'}>
+                    <h3 className="h2 fw-bold text-white mb-2">Associate Vice President</h3>
+                    <p className="fw-semibold mb-3" style={{color: '#34d399'}}>Adani Power Jharkhand Limited • July 2021 - April 2025 </p>
+                    <p className="fw-semibold mb-3" style={{color: '#34d399'}}>3 years 10 months Experience</p>
+                    <p className="text-light mb-3">
+                        Commissioning and maintenance head for mega power projects, ensuring optimal plant performance and operational excellence.
+                    </p>
+                    <div className="d-flex flex-wrap gap-2">
+                        <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(234, 88, 12, 0.2)', color: '#fed7aa'}}>Commissioning Management</span>
+                        <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(234, 179, 8, 0.2)', color: '#fef08a'}}>Maintenance Head</span>
+                        <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(8, 145, 178, 0.2)', color: '#a5f3fc'}}>Vendor Coordination</span>
+                        <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(8, 145, 178, 0.2)', color: '#a5f3fc'}}>Strategic Planning</span>
+                    </div>
+                </div>
+              </div>
+
+              <div className="position-relative ps-5 ms-4">
+                <div className="position-absolute start-0 top-0 rounded-circle border border-4 ms-n2" 
+                    style={{width: '16px', height: '16px', background: 'linear-gradient(to right, #34d399, #3b82f6)', borderColor: '#1e293b !important'}}></div>
+                <div className="p-4 rounded-4" style={{...customStyles.glassCard, transition: 'all 0.3s ease'}}
+                    onMouseEnter={(e) => e.target.style.borderColor = 'rgba(255, 255, 255, 0.3)'}
+                    onMouseLeave={(e) => e.target.style.borderColor = 'rgba(255, 255, 255, 0.1)'}>
+                    <h3 className="h2 fw-bold text-white mb-2">General Manager</h3>
+                    <p className="fw-semibold mb-3" style={{color: '#34d399'}}>GMR Power Limited • 2015 - 2021 </p>
+                    <p className="fw-semibold mb-3" style={{color: '#34d399'}}> 6 years Experience</p>
+                    <p className="text-light mb-3">
+                        6+ years of operational excellence in power generation, leading overall plant operations and strategic initiatives.
+                    </p>
+                    <div className="d-flex flex-wrap gap-2">
+                        <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(234, 88, 12, 0.2)', color: '#fed7aa'}}>Operations Management</span>
+                        <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(234, 179, 8, 0.2)', color: '#fef08a'}}>Strategic Planning</span>
+                        <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(8, 145, 178, 0.2)', color: '#a5f3fc'}}>Performance Optimization</span>
+                        <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(8, 145, 178, 0.2)', color: '#a5f3fc'}}>Stakeholder Coordination</span>
+                    </div>
+                </div>
+              </div>
+
+              <div className="position-relative ps-5 ms-4">
+                <div className="position-absolute start-0 top-0 rounded-circle border border-4 ms-n2" 
+                    style={{width: '16px', height: '16px', background: 'linear-gradient(to right, #34d399, #3b82f6)', borderColor: '#1e293b !important'}}></div>
+                <div className="p-4 rounded-4" style={{...customStyles.glassCard, transition: 'all 0.3s ease'}}
+                    onMouseEnter={(e) => e.target.style.borderColor = 'rgba(255, 255, 255, 0.3)'}
+                    onMouseLeave={(e) => e.target.style.borderColor = 'rgba(255, 255, 255, 0.1)'}>
+                    <h3 className="h2 fw-bold text-white mb-2">Sr. DGM Electrical (HOD)</h3>
+                    <p className="fw-semibold mb-3" style={{color: '#34d399'}}>LANCO ANPARA • 2011 - 2015</p>
+                    <p className="fw-semibold mb-3" style={{color: '#34d399'}}>4 years Experience</p>
+                    <p className="text-light mb-3">
+                        Head of Department for electrical maintenance across all plant systems.
+                    </p>
+                    <div className="d-flex flex-wrap gap-2">
+                        <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(234, 88, 12, 0.2)', color: '#fed7aa'}}>Electrical Systems Maintenance</span>
+                        <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(234, 179, 8, 0.2)', color: '#fef08a'}}>Technical Leadership</span>
+                        <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(8, 145, 178, 0.2)', color: '#a5f3fc'}}>System Reliability</span>
+                        <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(8, 145, 178, 0.2)', color: '#a5f3fc'}}>Team Training</span>
+                    </div>
+                </div>
+              </div>
+             
+              <div className="position-relative ps-5 ms-4">
+                <div className="position-absolute start-0 top-0 rounded-circle border border-4 ms-n2" 
+                    style={{width: '16px', height: '16px', background: 'linear-gradient(to right, #34d399, #3b82f6)', borderColor: '#1e293b !important'}}></div>
+                <div className="p-4 rounded-4" style={{...customStyles.glassCard, transition: 'all 0.3s ease'}}
+                    onMouseEnter={(e) => e.target.style.borderColor = 'rgba(255, 255, 255, 0.3)'}
+                    onMouseLeave={(e) => e.target.style.borderColor = 'rgba(255, 255, 255, 0.1)'}>
+                    <h3 className="h2 fw-bold text-white mb-2">Lead Manager Electrical</h3>
+                    <p className="fw-semibold mb-3" style={{color: '#34d399'}}>Reliance Industries Limited • September 2007 - May 2011</p>
+                        <p className="fw-semibold mb-3" style={{color: '#34d399'}}>3 years, 9 months</p>
+                        
+                    <p className="text-light mb-3">
+                        Specialized in electrical commissioning and Operations & Maintenance (O&M) for large-scale industrial projects.
+                    </p>
+                    <div className="d-flex flex-wrap gap-2">
+                        <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(234, 88, 12, 0.2)', color: '#fed7aa'}}>Electrical Commissioning</span>
+                        <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(234, 179, 8, 0.2)', color: '#fef08a'}}>O&M</span>
+                        <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(8, 145, 178, 0.2)', color: '#a5f3fc'}}>Jamnagar Operations</span>
+                    </div>
+                </div>
+              </div>
+
+              <div className="position-relative ps-5 ms-4">
+                <div className="position-absolute start-0 top-0 rounded-circle border border-4 ms-n2" 
+                    style={{width: '16px', height: '16px', background: 'linear-gradient(to right, #34d399, #3b82f6)', borderColor: '#1e293b !important'}}></div>
+                <div className="p-4 rounded-4" style={{...customStyles.glassCard, transition: 'all 0.3s ease'}}
+                    onMouseEnter={(e) => e.target.style.borderColor = 'rgba(255, 255, 255, 0.3)'}
+                    onMouseLeave={(e) => e.target.style.borderColor = 'rgba(255, 255, 255, 0.1)'}>
+                    <h3 className="h2 fw-bold text-white mb-2">Electrical Manager</h3>
+                    <p className="fw-semibold mb-3" style={{color: '#34d399'}}>KRIBHCO SHYAM FERTILIZER LTD • 1997 - 2007</p>
+                        <p className="fw-semibold mb-3" style={{color: '#34d399'}}>10 years</p>
+                    <p className="text-light mb-3">
+                        Ten years of experience managing electrical systems and leading teams in the fertilizer industry.
+                    </p>
+                    <div className="d-flex flex-wrap gap-2">
+                        <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(234, 88, 12, 0.2)', color: '#fed7aa'}}>Electrical Management</span>
+                        <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(234, 179, 8, 0.2)', color: '#fef08a'}}>Fertilizer Industry</span>
+                        <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(8, 145, 178, 0.2)', color: '#a5f3fc'}}>Team Leadership</span>
+                    </div>
+                </div>
+              </div>
+
+              <div className="position-relative ps-5 ms-4">
+                <div className="position-absolute start-0 top-0 rounded-circle border border-4 ms-n2" 
+                    style={{width: '16px', height: '16px', background: 'linear-gradient(to right, #34d399, #3b82f6)', borderColor: '#1e293b !important'}}></div>
+                <div className="p-4 rounded-4" style={{...customStyles.glassCard, transition: 'all 0.3s ease'}}
+                    onMouseEnter={(e) => e.target.style.borderColor = 'rgba(255, 255, 255, 0.3)'}
+                    onMouseLeave={(e) => e.target.style.borderColor = 'rgba(255, 255, 255, 0.1)'}>
+                    <h3 className="h2 fw-bold text-white mb-2">Service Engineer</h3>
+                    <p className="fw-semibold mb-3" style={{color: '#34d399'}}>Jyoti Ltd. • November 1994 - June 1997</p>
+                        <p className="fw-semibold mb-3" style={{color: '#34d399'}}>2 years, 8 months</p>
+                    <p className="text-light mb-3">
+                        Responsible for managing high-voltage switchgear installations and service for Northern India.
+                    </p>
+                    <div className="d-flex flex-wrap gap-2">
+                        <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(234, 88, 12, 0.2)', color: '#fed7aa'}}>High-Voltage Switchgear</span>
+                        <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(234, 179, 8, 0.2)', color: '#fef08a'}}>Field Service</span>
+                        <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(8, 145, 178, 0.2)', color: '#a5f3fc'}}>Installation Management</span>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Skills Section */}
       <section id="skills" className="py-5">
         <div className="container">
@@ -335,14 +498,14 @@ const Portfolio = () => {
                 level: '90%',
                 gradient: 'linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(124, 58, 237, 0.2))'
               },
-            {
-              icon: <Factory size={48} style={{color: '#f59e0b'}} />,
-              title: 'Project Commissioning',
-              description: 'Commissioning of 2x800 MW Thermal Power Plant and 6 MTPA Polypropylene Plant Electrical Systems.',
-              skill: 'Power & Industrial Systems',
-              level: '100%',
-              gradient: 'linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(34, 197, 94, 0.2))'
-            },
+          {
+  icon: <Factory size={48} style={{color: '#f59e0b'}} />,
+  title: 'Project Commissioning',
+  description: 'Commissioning of 2x800 MW Thermal Power Plant and 6 MTPA Polypropylene Plant Electrical Systems.',
+  skill: 'Power & Industrial Systems',
+  level: '100%',
+  gradient: 'linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(34, 197, 94, 0.2))'
+},
               {
                 icon: <Users size={48} style={{color: '#34d399'}} />,
                 title: 'Team Leadership',
@@ -362,9 +525,9 @@ const Portfolio = () => {
             ].map((item, index) => (
               <div key={index} className="col-lg-4 col-md-6">
                 <div className="p-4 rounded-4 h-100" 
-                    style={{...customStyles.glassCard, background: item.gradient, transition: 'transform 0.3s ease'}}
-                    onMouseEnter={(e) => e.target.style.transform = 'scale(1.05)'}
-                    onMouseLeave={(e) => e.target.style.transform = 'scale(1)'}>
+                     style={{...customStyles.glassCard, background: item.gradient, transition: 'transform 0.3s ease'}}
+                     onMouseEnter={(e) => e.target.style.transform = 'scale(1.05)'}
+                     onMouseLeave={(e) => e.target.style.transform = 'scale(1)'}>
                   <div className="mb-3">{item.icon}</div>
                   <h3 className="h4 fw-bold text-white mb-3">{item.title}</h3>
                   <p className="text-light mb-4">{item.description}</p>
@@ -375,7 +538,7 @@ const Portfolio = () => {
                     </div>
                     <div className="progress" style={{height: '8px', background: '#374151'}}>
                       <div className="progress-bar rounded-pill" 
-                            style={{width: item.level, background: 'linear-gradient(to right, #3b82f6, #67e8f9)'}}></div>
+                           style={{width: item.level, background: 'linear-gradient(to right, #3b82f6, #67e8f9)'}}></div>
                     </div>
                   </div>
                 </div>
@@ -419,168 +582,6 @@ const Portfolio = () => {
                       <small className="text-light">{achievement}</small>
                     </div>
                   ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Experience Section */}
-      <section id="experience" className="py-5" style={{background: 'rgba(0, 0, 0, 0.2)'}}>
-        <div className="container">
-          <div className="text-center mb-5">
-            <h2 className="display-3 fw-bold mb-4" style={customStyles.gradientText}>
-              Professional Journey
-            </h2>
-            <div className="mx-auto rounded-pill" style={{width: '96px', height: '4px', background: 'linear-gradient(to right, #3b82f6, #7c3aed)'}}></div>
-          </div>
-
-          <div className="position-relative">
-            <div className="position-absolute start-0 top-0 bottom-0 ms-4" style={{width: '2px', background: 'linear-gradient(to bottom, #3b82f6, #7c3aed)'}}></div>
-            
-            <div className="d-flex flex-column gap-5">
-              <div className="position-relative ps-5 ms-4">
-                <div className="position-absolute start-0 top-0 rounded-circle border border-4 ms-n2" 
-                    style={{width: '16px', height: '16px', background: 'linear-gradient(to right, #3b82f6, #7c3aed)', borderColor: '#1e293b !important'}}></div>
-                <div className="p-4 rounded-4" style={{...customStyles.glassCard, transition: 'all 0.3s ease'}}
-                    onMouseEnter={(e) => e.target.style.borderColor = 'rgba(255, 255, 255, 0.3)'}
-                    onMouseLeave={(e) => e.target.style.borderColor = 'rgba(255, 255, 255, 0.1)'}>
-                  <h3 className="h2 fw-bold text-white mb-2">Operations & Maintenance Leader</h3>
-                  <p className="fw-semibold mb-3" style={{color: '#60a5fa'}}>Adani Power Ltd • Present</p>
-                  <p className="text-light mb-3">
-                    Currently overseeing operations and maintenance of 2x660MW supercritical thermal power plant, 
-                    ensuring optimal performance, safety standards, and operational efficiency.
-                  </p>
-                  <div className="d-flex flex-wrap gap-2">
-                    <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(37, 99, 235, 0.2)', color: '#93c5fd'}}>Power Generation</span>
-                    <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(34, 197, 94, 0.2)', color: '#86efac'}}>Operations</span>
-                    <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(124, 58, 237, 0.2)', color: '#c4b5fd'}}>Maintenance</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="position-relative ps-5 ms-4">
-                <div className="position-absolute start-0 top-0 rounded-circle border border-4 ms-n2" 
-                    style={{width: '16px', height: '16px', background: 'linear-gradient(to right, #34d399, #3b82f6)', borderColor: '#1e293b !important'}}></div>
-                <div className="p-4 rounded-4" style={{...customStyles.glassCard, transition: 'all 0.3s ease'}}
-                    onMouseEnter={(e) => e.target.style.borderColor = 'rgba(255, 255, 255, 0.3)'}
-                    onMouseLeave={(e) => e.target.style.borderColor = 'rgba(255, 255, 255, 0.1)'}>
-                  <h3 className="h2 fw-bold text-white mb-2">Associate Vice President</h3>
-                  <p className="fw-semibold mb-3" style={{color: '#34d399'}}>Adani Power Jharkhand Limited • July 2021 - April 2025 </p>
-                  <p className="fw-semibold mb-3" style={{color: '#34d399'}}>3 years 10 months Experience</p>
-                  <p className="text-light mb-3">
-                    Commissioning and maintenance head for mega power projects, ensuring optimal plant performance and operational excellence.
-                  </p>
-                  <div className="d-flex flex-wrap gap-2">
-                    <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(234, 88, 12, 0.2)', color: '#fed7aa'}}>Commissioning Management</span>
-                    <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(234, 179, 8, 0.2)', color: '#fef08a'}}>Maintenance Head</span>
-                    <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(8, 145, 178, 0.2)', color: '#a5f3fc'}}>Vendor Coordination</span>
-                    <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(8, 145, 178, 0.2)', color: '#a5f3fc'}}>Strategic Planning</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="position-relative ps-5 ms-4">
-                <div className="position-absolute start-0 top-0 rounded-circle border border-4 ms-n2" 
-                    style={{width: '16px', height: '16px', background: 'linear-gradient(to right, #34d399, #3b82f6)', borderColor: '#1e293b !important'}}></div>
-                <div className="p-4 rounded-4" style={{...customStyles.glassCard, transition: 'all 0.3s ease'}}
-                    onMouseEnter={(e) => e.target.style.borderColor = 'rgba(255, 255, 255, 0.3)'}
-                    onMouseLeave={(e) => e.target.style.borderColor = 'rgba(255, 255, 255, 0.1)'}>
-                  <h3 className="h2 fw-bold text-white mb-2">General Manager</h3>
-                  <p className="fw-semibold mb-3" style={{color: '#34d399'}}>GMR Power Limited • 2015 - 2021 </p>
-                  <p className="fw-semibold mb-3" style={{color: '#34d399'}}> 6 years Experience</p>
-                  <p className="text-light mb-3">
-                    6+ years of operational excellence in power generation, leading overall plant operations and strategic initiatives.
-                  </p>
-                  <div className="d-flex flex-wrap gap-2">
-                    <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(234, 88, 12, 0.2)', color: '#fed7aa'}}>Operations Management</span>
-                    <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(234, 179, 8, 0.2)', color: '#fef08a'}}>Strategic Planning</span>
-                    <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(8, 145, 178, 0.2)', color: '#a5f3fc'}}>Performance Optimization</span>
-                    <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(8, 145, 178, 0.2)', color: '#a5f3fc'}}>Stakeholder Coordination</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="position-relative ps-5 ms-4">
-                <div className="position-absolute start-0 top-0 rounded-circle border border-4 ms-n2" 
-                    style={{width: '16px', height: '16px', background: 'linear-gradient(to right, #34d399, #3b82f6)', borderColor: '#1e293b !important'}}></div>
-                <div className="p-4 rounded-4" style={{...customStyles.glassCard, transition: 'all 0.3s ease'}}
-                    onMouseEnter={(e) => e.target.style.borderColor = 'rgba(255, 255, 255, 0.3)'}
-                    onMouseLeave={(e) => e.target.style.borderColor = 'rgba(255, 255, 255, 0.1)'}>
-                  <h3 className="h2 fw-bold text-white mb-2">Sr. DGM Electrical (HOD)</h3>
-                  <p className="fw-semibold mb-3" style={{color: '#34d399'}}>LANCO ANPARA • 2011 - 2015</p>
-                  <p className="fw-semibold mb-3" style={{color: '#34d399'}}>4 years Experience</p>
-                  <p className="text-light mb-3">
-                    Head of Department for electrical maintenance across all plant systems.
-                  </p>
-                  <div className="d-flex flex-wrap gap-2">
-                    <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(234, 88, 12, 0.2)', color: '#fed7aa'}}>Electrical Systems Maintenance</span>
-                    <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(234, 179, 8, 0.2)', color: '#fef08a'}}>Technical Leadership</span>
-                    <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(8, 145, 178, 0.2)', color: '#a5f3fc'}}>System Reliability</span>
-                    <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(8, 145, 178, 0.2)', color: '#a5f3fc'}}>Team Training</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="position-relative ps-5 ms-4">
-                <div className="position-absolute start-0 top-0 rounded-circle border border-4 ms-n2" 
-                    style={{width: '16px', height: '16px', background: 'linear-gradient(to right, #34d399, #3b82f6)', borderColor: '#1e293b !important'}}></div>
-                <div className="p-4 rounded-4" style={{...customStyles.glassCard, transition: 'all 0.3s ease'}}
-                    onMouseEnter={(e) => e.target.style.borderColor = 'rgba(255, 255, 255, 0.3)'}
-                    onMouseLeave={(e) => e.target.style.borderColor = 'rgba(255, 255, 255, 0.1)'}>
-                  <h3 className="h2 fw-bold text-white mb-2">Lead Manager Electrical</h3>
-                  <p className="fw-semibold mb-3" style={{color: '#34d399'}}>Reliance Industries Limited • September 2007 - May 2011</p>
-                  <p className="fw-semibold mb-3" style={{color: '#34d399'}}>3 years, 9 months</p>
-                  
-                  <p className="text-light mb-3">
-                    Specialized in electrical commissioning and Operations & Maintenance (O&M) for large-scale industrial projects.
-                  </p>
-                  <div className="d-flex flex-wrap gap-2">
-                    <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(234, 88, 12, 0.2)', color: '#fed7aa'}}>Electrical Commissioning</span>
-                    <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(234, 179, 8, 0.2)', color: '#fef08a'}}>O&M</span>
-                    <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(8, 145, 178, 0.2)', color: '#a5f3fc'}}>Jamnagar Operations</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="position-relative ps-5 ms-4">
-                <div className="position-absolute start-0 top-0 rounded-circle border border-4 ms-n2" 
-                    style={{width: '16px', height: '16px', background: 'linear-gradient(to right, #34d399, #3b82f6)', borderColor: '#1e293b !important'}}></div>
-                <div className="p-4 rounded-4" style={{...customStyles.glassCard, transition: 'all 0.3s ease'}}
-                    onMouseEnter={(e) => e.target.style.borderColor = 'rgba(255, 255, 255, 0.3)'}
-                    onMouseLeave={(e) => e.target.style.borderColor = 'rgba(255, 255, 255, 0.1)'}>
-                  <h3 className="h2 fw-bold text-white mb-2">Electrical Manager</h3>
-                  <p className="fw-semibold mb-3" style={{color: '#34d399'}}>KRIBHCO SHYAM FERTILIZER LTD • 1997 - 2007</p>
-                  <p className="fw-semibold mb-3" style={{color: '#34d399'}}>10 years</p>
-                  <p className="text-light mb-3">
-                    Ten years of experience managing electrical systems and leading teams in the fertilizer industry.
-                  </p>
-                  <div className="d-flex flex-wrap gap-2">
-                    <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(234, 88, 12, 0.2)', color: '#fed7aa'}}>Electrical Management</span>
-                    <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(234, 179, 8, 0.2)', color: '#fef08a'}}>Fertilizer Industry</span>
-                    <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(8, 145, 178, 0.2)', color: '#a5f3fc'}}>Team Leadership</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="position-relative ps-5 ms-4">
-                <div className="position-absolute start-0 top-0 rounded-circle border border-4 ms-n2" 
-                    style={{width: '16px', height: '16px', background: 'linear-gradient(to right, #34d399, #3b82f6)', borderColor: '#1e293b !important'}}></div>
-                <div className="p-4 rounded-4" style={{...customStyles.glassCard, transition: 'all 0.3s ease'}}
-                    onMouseEnter={(e) => e.target.style.borderColor = 'rgba(255, 255, 255, 0.3)'}
-                    onMouseLeave={(e) => e.target.style.borderColor = 'rgba(255, 255, 255, 0.1)'}>
-                  <h3 className="h2 fw-bold text-white mb-2">Service Engineer</h3>
-                  <p className="fw-semibold mb-3" style={{color: '#34d399'}}>Jyoti Ltd. • November 1994 - June 1997</p>
-                  <p className="fw-semibold mb-3" style={{color: '#34d399'}}>2 years, 8 months</p>
-                  <p className="text-light mb-3">
-                    Responsible for managing high-voltage switchgear installations and service for Northern India.
-                  </p>
-                  <div className="d-flex flex-wrap gap-2">
-                    <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(234, 88, 12, 0.2)', color: '#fed7aa'}}>High-Voltage Switchgear</span>
-                    <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(234, 179, 8, 0.2)', color: '#fef08a'}}>Field Service</span>
-                    <span className="badge rounded-pill px-3 py-2" style={{background: 'rgba(8, 145, 178, 0.2)', color: '#a5f3fc'}}>Installation Management</span>
-                  </div>
                 </div>
               </div>
             </div>
@@ -673,94 +674,95 @@ const Portfolio = () => {
               </div>
             </div>
           </div>
-          
-          {/* Contact Form Section */}
-          <div className="container mt-5">
-              <div className="row justify-content-center">
+        </div>
+        
+        {/* Contact Form Section */}
+        <div className="container mt-5">
+            <div className="row justify-content-center">
                 <div className="col-lg-8">
-                  <div className="p-5 rounded-4" style={customStyles.glassCard}>
-                    <h3 className="h2 fw-bold mb-4 text-white text-center">Send Me a Message</h3>
-                    <form onSubmit={onSubmit}>
-                      <div className="mb-3">
-                        <label htmlFor="name" className="form-label text-light">Full Name</label>
-                        <input
-                          type="text"
-                          className="form-control"
-                          id="name"
-                          name="name"
-                          value={formData.name}
-                          onChange={handleInputChange}
-                          required
-                        />
-                      </div>
-                      <div className="mb-3">
-                        <label htmlFor="email" className="form-label text-light">Email Address</label>
-                        <input
-                          type="email"
-                          className="form-control"
-                          id="email"
-                          name="email"
-                          value={formData.email}
-                          onChange={handleInputChange}
-                          required
-                        />
-                      </div>
-                      <div className="mb-4">
-                        <label htmlFor="message" className="form-label text-light">Your Message</label>
-                        <textarea
-                          className="form-control"
-                          id="message"
-                          name="message"
-                          rows="5"
-                          value={formData.message}
-                          onChange={handleInputChange}
-                          required
-                        ></textarea>
-                      </div>
-                      <div className="text-center">
-                        <button
-                          type="submit"
-                          className="btn btn-primary rounded-pill px-5 py-3"
-                          disabled={isLoading}
-                        >
-                          {isLoading ? (
-                            <>
-                              <span className="spinner-border spinner-border-sm me-2" role="status"></span>
-                              Sending...
-                            </>
-                          ) : (
-                            <>
-                              <Mail size={24} className="me-2" />
-                              Send Message
-                            </>
-                          )}
-                        </button>
-                      </div>
-                      {result && (
-                        <div className={`alert ${result.includes('Successfully') ? 'alert-success' : 'alert-danger'} mt-3 text-center`}>
-                          {result}
-                        </div>
-                      )}
-                    </form>
-                  </div>
+                    <div className="p-5 rounded-4" style={customStyles.glassCard}>
+                        <h3 className="h2 fw-bold mb-4 text-white text-center">Send Me a Message</h3>
+                        <form onSubmit={onSubmit}>
+                            <div className="mb-3">
+                                <label htmlFor="name" className="form-label text-light">Full Name</label>
+                                <input
+                                    type="text"
+                                    className="form-control"
+                                    id="name"
+                                    name="name"
+                                    value={formData.name}
+                                    onChange={handleInputChange}
+                                    required
+                                />
+                            </div>
+                            <div className="mb-3">
+                                <label htmlFor="email" className="form-label text-light">Email Address</label>
+                                <input
+                                    type="email"
+                                    className="form-control"
+                                    id="email"
+                                    name="email"
+                                    value={formData.email}
+                                    onChange={handleInputChange}
+                                    required
+                                />
+                            </div>
+                            <div className="mb-4">
+                                <label htmlFor="message" className="form-label text-light">Your Message</label>
+                                <textarea
+                                    className="form-control"
+                                    id="message"
+                                    name="message"
+                                    rows="5"
+                                    value={formData.message}
+                                    onChange={handleInputChange}
+                                    required
+                                ></textarea>
+                            </div>
+                            <div className="text-center">
+                                <button 
+                                    type="submit" 
+                                    className="btn btn-primary rounded-pill px-5 py-3"
+                                    disabled={isLoading}
+                                >
+                                    {isLoading ? (
+                                        <>
+                                            <span className="spinner-border spinner-border-sm me-2" role="status"></span>
+                                            Sending...
+                                        </>
+                                    ) : (
+                                        <>
+                                            <Mail size={24} className="me-2" />
+                                            Send Message
+                                        </>
+                                    )}
+                                </button>
+                            </div>
+                            {result && (
+                                <div className={`alert ${result.includes('Successfully') ? 'alert-success' : 'alert-danger'} mt-3 text-center`}>
+                                    {result}
+                                </div>
+                            )}
+                        </form>
+                    </div>
                 </div>
-              </div>
-          </div>
-        </section>
+            </div>
+        </div>
+      </section>
 
-        {/* Footer */}
-        <footer className="py-4 border-top" style={{borderColor: 'rgba(255, 255, 255, 0.1) !important'}}>
-          <div className="container text-center">
-            <p className="text-grey mb-2">
-              © 2024 Manish Kumar. Cross-functional leader dedicated to industrial excellence.
-            </p>
-            <p className="small text-grey">
-              Currently overseeing 2x660MW supercritical thermal power plant operations at Adani Power Ltd.
-            </p>
-          </div>
-        </footer>
-      </div>
-    );
-  };
+      {/* Footer */}
+      <footer className="py-4 border-top" style={{borderColor: 'rgba(255, 255, 255, 0.1) !important'}}>
+        <div className="container text-center">
+          <p className="text-grey mb-2">
+            © 2024 Manish Kumar. Cross-functional leader dedicated to industrial excellence.
+          </p>
+          <p className="small text-grey">
+            Currently overseeing 2x660MW supercritical thermal power plant operations at Adani Power Ltd.
+          </p>
+        </div>
+      </footer>
+    </div>
+  );
+};
 
 export default Portfolio;
