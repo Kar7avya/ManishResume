@@ -1240,6 +1240,12 @@ const Portfolio = () => {
                   <Zap size={20} className="me-2" style={{color: '#fbbf24'}} />
                   <span>2x660MW Operations</span>
                 </div>
+
+                <div className="d-flex align-items-center rounded-pill px-4 py-3" style={{background: 'rgba(255, 255, 255, 0.1)', backdropFilter: 'blur(8px)'}}>
+                  <Zap size={20} className="me-2" style={{color: '#fbbf24'}} />
+                  <span>Commissioning</span>
+                </div>
+                    
                 <div className="d-flex align-items-center rounded-pill px-4 py-3" style={{background: 'rgba(255, 255, 255, 0.1)', backdropFilter: 'blur(8px)'}}>
                   <Award size={20} className="me-2" style={{color: '#34d399'}} />
                   <span>Adani Power Ltd</span>
