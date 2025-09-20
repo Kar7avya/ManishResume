@@ -1590,6 +1590,14 @@ const Portfolio = () => {
                 level: '90%',
                 gradient: 'linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(124, 58, 237, 0.2))'
               },
+          {
+  icon: <Factory size={48} style={{color: '#f59e0b'}} />,
+  title: 'Project Commissioning',
+  description: 'Commissioning of 2x800 MW Thermal Power Plant and 6 MTPA Polypropylene Plant Electrical Systems.',
+  skill: 'Power & Industrial Systems',
+  level: '100%',
+  gradient: 'linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(34, 197, 94, 0.2))'
+},
               {
                 icon: <Users size={48} style={{color: '#34d399'}} />,
                 title: 'Team Leadership',
