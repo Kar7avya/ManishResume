@@ -296,6 +296,7 @@
 //                 level: '90%',
 //                 gradient: 'linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(124, 58, 237, 0.2))'
 //               },
+
 //               {
 //                 icon: <Users size={48} style={{color: '#34d399'}} />,
 //                 title: 'Team Leadership',
